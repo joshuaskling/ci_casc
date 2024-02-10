@@ -397,7 +397,6 @@ unclassified:
         modernSCM:
           scm:
             git:
-              id: "ed1028d5-33ae-4975-8e5b-f341a280b0ee"
               remote: "https://github.com/joshuaskling/sync_test.git"
               traits:
               - "gitBranchDiscovery"
@@ -419,9 +418,11 @@ unclassified:
     useSsl: false
     useTls: false
   operationsCenterRootAction:
-    connectionDetails: "----- BEGIN CONNECTION DETAILS -----\nH4sIAAAAAAAA/w2NQQ6DIBBF78K6I5UBHLlGD2AYxGpK2gYxXTTe3fnJ27y85P/Vs8Z3U0FFZouj\r\
-      \nYXCWDdjoCAgtgV8SzmPvPeOgbmqbpb1D2qY1Tqkce8tV9FGL+LW1b9Da2a4n7IwhYQgk09L8Mj8+\r\
-      \n6ZXlbYllz+cFsOefSX0AAAA=\r\n----- END CONNECTION DETAILS -----\n"
+    connectionDetails: "----- BEGIN CONNECTION DETAILS -----
+H4sIAAAAAAAA/w2NSw4CIRAF78LaHtINCMM1PIDh06NGMhgG48J4d/sltalU8r7qNtI+VVTeWHtG
+w5CIHFiuDCFtFXzO6FY0fi1WndSjSotQ+j5Hb43HlcS+RxN9n/MVtXZ2wWAWoiD4GGRamg/nSy9P
+lrMttYN/f+aG3tB8AAAA
+----- END CONNECTION DETAILS -----"
   pollSCM:
     pollingThreadCount: 10
   prismConfiguration:
