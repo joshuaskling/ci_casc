@@ -18,7 +18,7 @@ jenkins:
   - name: "agent_1"
   - name: "asdfasdfasdf"
   - name: "built-in"
-  labelString: "asdfasdfasdf"
+  labelString: "thisisatest"
   markupFormatter: "plainText"
   mode: EXCLUSIVE
   myViewsTabBar: "standard"
