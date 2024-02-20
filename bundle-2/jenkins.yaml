@@ -265,15 +265,6 @@ security:
     allowedOnController: false
   gitHostKeyVerificationConfiguration:
     sshHostKeyVerificationStrategy: "knownHostsFileVerificationStrategy"
-  rbacAutoConfigurerPlugin:
-    createFoldersForGroups: true
-    createFoldersForUsers: true
-    disable: false
-    excludedGroupsPattern: "authenticated"
-    roleAdministerFolderName: "administer-folder"
-    roleAdministerName: "administer"
-    roleBrowseFolderName: "browse-folder"
-    roleDevelopName: "develop"
   sSHD:
     port: -1
 unclassified:
