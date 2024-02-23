@@ -1,4 +1,5 @@
 plugins:
+- id: ant
 - id: antisamy-markup-formatter
 - id: apache-httpcomponents-client-4-api
 - id: aws-credentials
