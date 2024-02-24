@@ -5,7 +5,6 @@ jenkins:
   - "JNLP4-connect-proxy"
   - "OperationsCenter2"
   - "Ping"
-  authorizationStrategy: "cloudBeesRoleBasedAccessControl"
   clouds:
   - "operationsCenterAgentProvisioningService"
   crumbIssuer:
