@@ -7,7 +7,6 @@ jenkins:
   - "Ping"
   clouds:
   - "operationsCenterAgentProvisioningService"
-  disableRememberMe: false
   disabledAdministrativeMonitors:
   - "hudson.util.DoubleLaunchChecker"
   labelAtoms:
