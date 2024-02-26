@@ -5,8 +5,13 @@ jenkins:
   - "JNLP4-connect-proxy"
   - "OperationsCenter2"
   - "Ping"
+  authorizationStrategy: "cloudBeesRoleBasedAccessControl"
   clouds:
   - "operationsCenterAgentProvisioningService"
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  disableRememberMe: false
   disabledAdministrativeMonitors:
   - "hudson.util.DoubleLaunchChecker"
   labelAtoms:
