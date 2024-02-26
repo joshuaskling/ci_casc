@@ -7,9 +7,6 @@ jenkins:
   - "Ping"
   clouds:
   - "operationsCenterAgentProvisioningService"
-  crumbIssuer:
-    standard:
-      excludeClientIPFromCrumb: false
   disableRememberMe: false
   disabledAdministrativeMonitors:
   - "hudson.util.DoubleLaunchChecker"
