@@ -1,0 +1,22 @@
+removeStrategy:
+  rbac: SYNC
+  items: NONE
+items:
+- kind: folder
+  name: develop
+  allItems:
+  - develop/tiny_test
+  allViews:
+  - all:
+      filterQueue: false
+      allItems:
+      - develop/tiny_test
+      filterExecutors: false
+      items:
+      - develop/tiny_test
+  description: ''
+  displayName: develop
+  properties:
+  - envVars: {}
+  - itemRestrictions:
+      filter: false
