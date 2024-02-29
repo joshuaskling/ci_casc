@@ -277,7 +277,7 @@ unclassified:
     storage: "file"
   location:
     adminAddress: "${test_var}"
-    url: "http://ec2-54-183-169-172.us-west-1.compute.amazonaws.com/"
+    url: "http://ec2-54-183-169-172.us-west-1.compute.amazonaws.com:8080"
   mailer:
     charset: "UTF-8"
     smtpHost: "smtp.example.com"
