@@ -1,2 +1,2 @@
 variables:
-  - test_var: "this_is_a_test"
+  - test_var: "Josh Kling <jkling@aliadosolutions.com>"
