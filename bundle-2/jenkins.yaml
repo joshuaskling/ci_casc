@@ -276,7 +276,7 @@ unclassified:
   junitTestResultStorage:
     storage: "file"
   location:
-    adminAddress: "Josh ${test_var} <jkling@aliadosolutions.com>"
+    adminAddress: "${test_var}"
     url: "http://ci-load-balancer-224437198.us-west-1.elb.amazonaws.com/"
   mailer:
     charset: "UTF-8"
