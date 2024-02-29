@@ -252,7 +252,7 @@ unclassified:
   gitHubConfiguration:
     apiRateLimitChecker: ThrottleForNormalize
   gitHubPluginConfig:
-    hookUrl: "http://ci-load-balancer-224437198.us-west-1.elb.amazonaws.com/github-webhook/"
+    hookUrl: "http://ec2-54-183-169-172.us-west-1.compute.amazonaws.com/github-webhook/"
   globalDefaultFlowDurabilityLevel:
     durabilityHint: PERFORMANCE_OPTIMIZED
   globalLibraries:
@@ -277,7 +277,7 @@ unclassified:
     storage: "file"
   location:
     adminAddress: "${test_var}"
-    url: "http://ci-load-balancer-224437198.us-west-1.elb.amazonaws.com/"
+    url: "http://ec2-54-183-169-172.us-west-1.compute.amazonaws.com/"
   mailer:
     charset: "UTF-8"
     smtpHost: "smtp.example.com"
