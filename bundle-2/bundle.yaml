@@ -7,3 +7,5 @@ jcasc:
   - "jenkins.yaml"
 plugins:
   - "plugins.yaml"
+variables:
+  - "variables.yaml"
