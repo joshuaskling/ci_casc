@@ -291,28 +291,3 @@ lrMttYN/f+aG3tB8AAAA
 ----- END CONNECTION DETAILS -----"
   pollSCM:
     pollingThreadCount: 10
-  prismConfiguration:
-    theme: PRISM
-  scmGit:
-    addGitTagAction: false
-    allowSecondFetch: false
-    createAccountBasedOnEmail: false
-    disableGitToolChooser: false
-    hideCredentials: false
-    showEntireCommitSummaryInChanges: false
-    useExistingAccountWithSameEmail: false
-  usageStatisticsCloudBees:
-    disabledJenkinsUsageStatistics: true
-    usageStatisticsCollected: true
-  validationVisualization:
-    quiet: false
-tool:
-  cloudbeesPluginUsageAnalyzer:
-    enabled: true
-  git:
-    installations:
-    - home: "git"
-      name: "Default"
-  mavenGlobalConfig:
-    globalSettingsProvider: "standard"
-    settingsProvider: "standard"
