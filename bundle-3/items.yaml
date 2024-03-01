@@ -2,8 +2,8 @@ removeStrategy:
   rbac: SYNC
   items: NONE
 items:
-- kind: folder
-  name: another_test_folder
+- kind: "folder"
+  name: "another_test_folder"
   allItems:
   - another_test_folder/tiny_test
   allViews:
@@ -15,7 +15,7 @@ items:
       items:
       - another_test_folder/tiny_test
   description: ''
-  displayName: another_test_folder
+  displayName: "another_test_folder"
   properties:
   - envVars: {}
   - itemRestrictions:
