@@ -1,0 +1,22 @@
+removeStrategy:
+  rbac: SYNC
+  items: NONE
+items:
+- kind: folder
+  name: another_test_folder
+  allItems:
+  - another_test_folder/tiny_test
+  allViews:
+  - all:
+      filterQueue: false
+      allItems:
+      - another_test_folder/tiny_test
+      filterExecutors: false
+      items:
+      - another_test_folder/tiny_test
+  description: ''
+  displayName: another_test_folder
+  properties:
+  - envVars: {}
+  - itemRestrictions:
+      filter: false
