@@ -1,3 +1,22 @@
 removeStrategy:
   rbac: SYNC
   items: NONE
+items:
+- kind: folder
+  name: testing
+  allItems:
+  - testing/blah
+  allViews:
+  - all:
+      filterQueue: false
+      allItems:
+      - testing/blah
+      filterExecutors: false
+      items:
+      - testing/blah
+  description: ''
+  displayName: blah
+  properties:
+  - envVars: {}
+  - itemRestrictions:
+      filter: false
