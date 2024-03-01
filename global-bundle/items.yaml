@@ -20,3 +20,21 @@ items:
   - envVars: {}
   - itemRestrictions:
       filter: false
+- kind: folder
+  name: testing
+  allItems:
+  - testing/test_pipeline
+  allViews:
+  - all:
+      filterQueue: false
+      allItems:
+      - testing/test_pipeline
+      filterExecutors: false
+      items:
+      - testing/test_pipeline
+  description: ''
+  displayName: testing
+  properties:
+  - envVars: {}
+  - itemRestrictions:
+      filter: false
