@@ -1,45 +1,32 @@
 removeStrategy:
-  rbac: SYNC
-  items: NONE
+  items: "none"
+  rbac: "sync"
+
 items:
-- kind: folder
-  name: test_folder
-  allViews:
-  - all:
-      filterQueue: false
-      filterExecutors: false
-  description: ''
-  displayName: test_folder
-  properties:
-  - envVars: {}
-  - itemRestrictions:
-      filter: false
-- kind: folder
-  name: testing
-  allViews:
-  - all:
-      filterQueue: false
-      filterExecutors: false
-  description: ''
-  displayName: testing
-- kind: folder
-  name: Zach_folder
-  allItems:
-  - Zach_folder/test
-  allViews:
-  - all:
-      filterQueue: false
-      allItems:
-      - Zach_folder/test
-      filterExecutors: false
-      items:
-      - Zach_folder/test
-  displayName: Zach_folder
-  groups:
-  - members:
-      users:
-      - zach
-    roles:
-    - name: Developers
-      grantedAt: current
-    name: developers
+  - kind: "folder"
+    name: project-test
+    displayName: "Project Alpha"
+    description: "Project Alpha is going to change the world!"
+    groups:
+      - name: "Project Alpha Developers"
+        members:
+          users:
+          - zach
+        roles:
+          - name: "developer"
+    items: 
+      - kind: "folder"
+        name: "project-alpha-test"
+        displayName: "Project Alpha Test"
+        items:
+          - kind: "folder"
+            name: "test-1"
+          - kind: "folder"
+            name: "test-2"
+  - kind: "folder"
+    name: "project-beta"
+    displayName: "Project Beta"
+    description: "Secret project! Only Admins can see this!"
+    filteredRoles: 
+      - "developer"
+      - "browser"
