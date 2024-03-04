@@ -20,3 +20,10 @@ items:
   - envVars: {}
   - itemRestrictions:
       filter: false
+    groups:
+    - name: "dev"
+      members:
+        internal_groups:
+        - dev
+      roles:
+        - name: "developer"
