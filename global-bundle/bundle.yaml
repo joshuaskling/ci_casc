@@ -8,3 +8,5 @@ plugins:
   - "plugins.yaml"
 variables:
   - "variables.yaml"
+items:
+  - "items.yaml"
