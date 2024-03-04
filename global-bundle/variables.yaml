@@ -1,2 +1,2 @@
 variables:
-  - test_var: "Totally Real <totallyreal@admin.com>"
+  - test_var: "global test <globaltest@admin.com>"
