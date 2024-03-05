@@ -1,22 +1,23 @@
 removeStrategy:
-  rbac: SYNC
-  items: NONE
+  items: "none"
+  rbac: "sync"
+
 items:
-- kind: folder
-  name: testing
-  allItems:
-  - testing/test_pipeline
-  allViews:
-  - all:
-      filterQueue: false
-      allItems:
-      - testing/test_pipeline
-      filterExecutors: false
-      items:
-      - testing/test_pipeline
-  description: ''
-  displayName: testing
-  properties:
-  - envVars: {}
-  - itemRestrictions:
-      filter: false
+  - kind: "folder"
+    name: project-test
+    displayName: "global-test"
+    description: "Testing global item creation"
+    groups:
+      - name: "Developers"
+        members:
+          users:
+          - zach
+        roles:
+          - name: "developer"
+    items: 
+      - kind: "folder"
+        name: "project-test"
+        displayName: "Testing global item creation"
+        items:
+          - kind: "folder"
+            name: "interior-test"
