@@ -1,4 +1,4 @@
-version: 3
+version: 1
 type: pipeline-template
 
 name: Java Maven App Pipeline Job
