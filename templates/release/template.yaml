@@ -1,8 +1,8 @@
 version: 1
 type: pipeline-template
 
-name: Java Maven App Pipeline Job
-description: Simple Java App With Maven
+name: release-master
+description: release-master
 parameters:
   - name: emailRecipient
     type: string
