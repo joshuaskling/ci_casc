@@ -1,0 +1,11 @@
+pipeline {
+    agent {label 'test-agent'}
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Running Release Master'
+            }
+        }
+    }
+}
