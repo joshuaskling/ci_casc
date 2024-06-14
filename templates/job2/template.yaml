@@ -1,8 +1,8 @@
 version: 1
 type: pipeline-template
 
-name: job1
-description: job1
+name: job2
+description: job2
 parameters:
   - name: emailRecipient
     type: string
