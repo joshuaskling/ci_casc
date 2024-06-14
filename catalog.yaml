@@ -1,5 +1,5 @@
-version: 2
+version: 3
 type: pipeline-template-catalog
 
-name: customerPortalFrontendTeamCatalog
-displayName: Shared Template Catalog for Teams Working on the Customer Portal
+name: ci-release-catalog
+displayName: pipelines for controlling the release of production code
