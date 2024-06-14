@@ -1,10 +1,30 @@
+@Library ("example") _
 pipeline {
     agent {label 'test-agent'}
 
     stages {
-        stage('Hello') {
+        stage('DEV') {
             steps {
-                echo 'Running Release Master'
+                example1()
+                example2()
+            }
+        }
+        stage('TEST') {
+            steps {
+                example1()
+                example2()
+            }
+        }
+        stage('QA') {
+            steps {
+                example1()
+                example2()
+            }
+        }
+        stage('PROD') {
+            steps {
+                example1()
+                example2()
             }
         }
     }
