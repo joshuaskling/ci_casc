@@ -1,0 +1,298 @@
+jenkins:
+  agentProtocols:
+  - "Diagnostic-Ping"
+  - "JNLP4-connect"
+  - "OperationsCenter2"
+  - "Ping"
+  authorizationStrategy:
+    loggedInUsersCanDoAnything:
+      allowAnonymousRead: false
+  crumbIssuer:
+    standard:
+      excludeClientIPFromCrumb: false
+  disableRememberMe: false
+  disabledAdministrativeMonitors:
+  - "hudson.util.DoubleLaunchChecker"
+  labelAtoms:
+  - name: "built-in"
+  markupFormatter: "plainText"
+  mode: NORMAL
+  myViewsTabBar: "standard"
+  noUsageStatistics: true
+  nodeMonitors:
+  - "architecture"
+  - "clock"
+  - diskSpace:
+      freeSpaceThreshold: "1GiB"
+      freeSpaceWarningThreshold: "2GiB"
+  - "swapSpace"
+  - tmpSpace:
+      freeSpaceThreshold: "1GiB"
+      freeSpaceWarningThreshold: "2GiB"
+  - "responseTime"
+  numExecutors: 2
+  primaryView:
+    masters:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "manageMaster"
+      - "totalJobsViewColumn"
+      - "queueSizeViewColumn"
+      - "jenkinsVersionViewColumn"
+      - "listSelectionColumn"
+      jobFilters:
+      - "connectedMasterViewFilter"
+      name: "Controllers"
+      recurse: true
+  projectNamingStrategy: "standard"
+  quietPeriod: 5
+  remotingSecurity:
+    enabled: true
+  scmCheckoutRetryCount: 0
+  securityRealm:
+    local:
+      allowsSignup: false
+      enableCaptcha: false
+      users:
+      - id: "admin"
+        name: "admin"
+        properties:
+        - "consoleUrlProvider"
+        - "blueSteelRedirectOptOutProperty"
+        - "myView"
+        - preferredProvider:
+            providerId: "default"
+        - "timezone"
+        - "experimentalFlags"
+        - mailer:
+            emailAddress: "jkling@aliadosolutions.com"
+        - "apiToken"
+  slaveAgentPort: 50000
+  updateCenter:
+    sites:
+    - id: "core-oc-traditional-offline"
+      url: "file:/var/cache/cloudbees-core-oc/war/WEB-INF/plugins/update-center.json"
+    - id: "cap-core-oc-traditional"
+      url: "https://jenkins-updates.cloudbees.com/update-center/envelope-core-oc-traditional/update-center.json"
+  views:
+  - masters:
+      columns:
+      - "status"
+      - "weather"
+      - "jobName"
+      - "manageMaster"
+      - "totalJobsViewColumn"
+      - "queueSizeViewColumn"
+      - "jenkinsVersionViewColumn"
+      - "listSelectionColumn"
+      jobFilters:
+      - "connectedMasterViewFilter"
+      name: "Controllers"
+      recurse: true
+  - all:
+      name: "all"
+  viewsTabBar: "standard"
+beekeeper:
+  enabled: true
+  securityWarnings:
+    enabledForCore: true
+    enabledForPlugins: true
+  upgrades:
+    autoDowngradePlugins: false
+    autoUpgradePlugins: true
+cloudBeesCasCServer:
+  disableRemoteValidation: false
+  visibility: false
+license:
+  certificate: |
+    -----BEGIN CERTIFICATE-----
+    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
+    LY/jVAqP2pNboHwnvJFOaNItOw==
+    -----END CERTIFICATE-----
+  key: |
+    -----BEGIN RSA PRIVATE KEY-----
+    MIIEpAIBAAKCAQEAua1kPmzgLzKPpBbhcMuFsnctCNwVC+19UCY3nQonD4KdWhvp
+    w8jPVxreDI03nZwapON4nM/EOA8WEvR5uwAomzkM8c+H0k5VtENt1pR1xavhPO2k
+    5BEw6F6n6+Ad8dfngaAxKhGsodEBOvgdJeFHukYYdM4WuB+Ol0hI8XtyNdFe8Q44
+    UqyYOV9xp7lWfPPc9WY6yaDNQKbZugigVyZvTTjigvB8cZ2+0RBu8HOWqB3rFpnF
+    ikP/VHzf5K9xSaSWp0stZoueZSNXo/lG9D65gk215C/p3A9363xtSg+dEeqUqmV7
+    53gv7IjS8nNVB2CkUG9IrOEJesL2z8rAYi6IqwIDAQABAoIBADpKIrQuPdrTRqC+
+    xhtA6UHzg+HKJZlO/w4QUVktfMGzwW4uYR6jhePUfWz3UERcY0jsWEryNqlaoxVk
+    RmrcS+Me799hxUPSb7ldibfZd3eM0/Lqr98hPndUb+buvrfTjcv13DlWvxk1oes/
+    RPdFV900cC0LHbrDvWHkwXF9zYbzH+nFkCjkW/ER9G1+2U89giFjs1+cgc3pNHnT
+    6thWd9JagR/AXv2qIvUr8wms9FrQqA7s1uiGZOAHJ7Rmm+jfBI4lNCq1qYIZrJ+v
+    VIymiOIvSKpRNPvcQFG8WnnnqEJAUDSTkSQVkmDgsSuArjunSsSH6BCwBjBimtSv
+    UfFCoFECgYEA8tU8Y4G3FIZboEUJgxKfyW0IMPYr5fv556NPQSIXdvcG6ZWeRZAn
+    ckA66wuFZoYbgo2J1UxkZnYRxp0/vH9eCjABiNMmYnFjbc4Zjbdu+DoaHXlizbnW
+    wDj/2jA5QoNgtsm2A/Cu2yn+qG5cSH+B8uE5O8xxBTKb5MEsjii0TtUCgYEAw77H
+    OxdUXmCxrRve8xGmdMAQVeKwMEcmznbgu5rf7xgGxvQFjpPnbA4MSUSdyBz4Szmj
+    /Gsy+NK4vuZA5Gcxmh0hJlsuO+Fk5amgqPzEVpZ3GZRP8XD4PHzmL+2J+izhL2rU
+    RzeUhIj3MKkMGj0YExBDdNE009L7AfCg82F2OX8CgYAe9/7ZmeNlZLUuvV83Lhre
+    r18KD3sNu5Llbbhf0B859ssU4xXqPTYqpfJdo3yB1LyRa8eWQkXTo18k+0zzlzLB
+    DdpEPtl4WImbqVss7aXjVlWaSK7HGdo/bYWDp/7FcsfUx+jEm99Q6AwoItr2C/zg
+    osSP0cTgKtIi3Ff4UUydeQKBgQCwWJVglPn7NJ2dWPiYfxQ5JjcRSPJ17AP4CX0Z
+    RsPrwPeKEZlYA8N/w4AqGdkTyZWfH8SuyVzYce7ifMmFe7piH1AYIBkc9UhS52jI
+    FUBEybVupAEJgT8CL3upPhUJ/5i3gUTRDC+O313ixskScmvX8NT0zu0K0I42BzTZ
+    TrqVvQKBgQDp/0ZevDa4covY2uUrnj6NnuacFjCtJ+odV1v1L2ac3XfQSx1w5JvN
+    cnS7OqQtt/fBgxW3LC6vX37v1hhSgXliz7rRvrjckZ25aIUyoyfaH/muqisBNBPz
+    3cw2uw/UMT6XaAs8ZwTnWhJBJ4sx1ZO4jUdcFT9a66mSXNJM2d3+qQ==
+    -----END RSA PRIVATE KEY-----
+support:
+  automatedBundleConfiguration:
+    componentIds:
+    - "CloudBeesAssuranceSupport"
+    - "CloudBeesCasCUpdateLogBundlesSupport"
+    - "AgentsConfigFile"
+    - "ConfigFileComponent"
+    - "OtherConfigFilesComponent"
+    - "AboutBrowser"
+    - "AboutJenkins"
+    - "AboutUser"
+    - "AdministrativeMonitors"
+    - "AgentProtocols"
+    - "BuildQueue"
+    - "CustomLogs"
+    - "DumpExportTable"
+    - "EnvironmentVariables"
+    - "FileDescriptorLimit"
+    - "GCLogs"
+    - "HeapUsageHistogram"
+    - "ItemsContent"
+    - "AgentsJVMProcessSystemMetricsContents"
+    - "MasterJVMProcessSystemMetricsContents"
+    - "JenkinsLogs"
+    - "LoadStats"
+    - "LoggerManager"
+    - "Metrics"
+    - "NetworkInterfaces"
+    - "NodeExecutors"
+    - "NodeMonitors"
+    - "OtherLogs"
+    - "ReverseProxy"
+    - "RootCAs"
+    - "RunningBuilds"
+    - "SlaveCommandStatistics"
+    - "SlaveLaunchLogs"
+    - "SlaveLogs"
+    - "AgentsSystemConfiguration"
+    - "MasterSystemConfiguration"
+    - "SystemProperties"
+    - "TaskLogs"
+    - "ThreadDumps"
+    - "UpdateCenter"
+    - "UserCount"
+    - "ComponentImpl"
+    - "SlowRequestComponent"
+    - "HighLoadComponent"
+    - "DeadlockRequestComponent"
+    - "ConnectedMasterSupportComponent"
+    - "UserActivityComponent"
+    enabled: true
+    period: 1
+globalCredentialsConfiguration:
+  configuration:
+    providerFilter: "none"
+    typeFilter: "none"
+appearance:
+  prism:
+    theme: PRISM
+security:
+  anonymizeSupportBundle:
+    enabled: false
+  apiToken:
+    creationOfLegacyTokenEnabled: false
+    tokenGenerationOnCreationEnabled: false
+    usageStatisticsEnabled: true
+  securitySettingsEnforcement:
+    global:
+      noSecurityEnforcer:
+        canCustomMapping: false
+        defaultMappingFactory: "trustedEquivalentRAMF"
+unclassified:
+  buildDiscarders:
+    configuredBuildDiscarders:
+    - "jobBuildDiscarder"
+  bundleStorageService:
+    activated: true
+    bundles:
+    - name: "https://github.com/joshuaskling/ci_casc.git"
+      retriever: "localFolderRetriever"
+    checkOutTimeout: 600
+    pollingPeriod: 120
+    purgeOnDeactivation: false
+  bundleUpdateTiming:
+    automaticReload: false
+    automaticRestart: false
+    rejectWarnings: false
+    reloadAlwaysOnRestart: false
+    skipNewVersions: false
+  cascItemsConfiguration:
+    variableInterpolationEnabledForAdmin: false
+    variableInterpolationEnabledForNonAdmin: false
+  experimentalPlugins:
+    enabled: false
+  fingerprints:
+    fingerprintCleanupDisabled: false
+    storage: "file"
+  hAGlobalConfiguration:
+    bindPort: 0
+    diagnosticPort: 0
+    portRange: 0
+    timeout: 30
+  location:
+    adminAddress: "address not configured yet <nobody@nowhere>"
+    url: "http://localhost:8888/"
+  mailer:
+    charset: "UTF-8"
+    useSsl: false
+    useTls: false
+  operationsCenterSharedConfiguration:
+    enabled: false
+  pollSCM:
+    pollingThreadCount: 10
+  usageStatisticsCloudBees:
+    disabledJenkinsUsageStatistics: true
+    usageStatisticsCollected: true
+  validationVisualization:
+    quiet: false
+tool:
+  cloudbeesPluginUsageAnalyzer:
+    enabled: true
+  mavenGlobalConfig:
+    globalSettingsProvider: "standard"
+    settingsProvider: "standard"
