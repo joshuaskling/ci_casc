@@ -61,6 +61,15 @@ jenkins:
     all:
       name: "all"
   projectNamingStrategy: "standard"
+  proxy:
+    name: "bcpxy.nycnet"
+    noProxyHost: |
+      *.fisa.nycnet
+      *.citytime.nycnet
+    port: 8080
+    secretPassword: "{AQAAABAAAAAQRCNx2Dj4OnTh7y9Hrgmhxy9BrQRPS1yeAWx2uSTZHlU=}"
+    testUrl: "http://hrpcbcr13.fisa.nycnet:8080/whoAmI/api/json?tree=authenticated"
+    userName: "nycapshmc"
   quietPeriod: 5
   remotingSecurity:
     enabled: true
