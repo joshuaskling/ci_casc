@@ -14,9 +14,10 @@ items:
           - zach
         roles:
           - name: "developer"
-    - kind: "folder"
-      name: "project-test"
-      displayName: "Testing global item creation"
       items:
         - kind: "folder"
-          name: "interior-test"
+          name: "project-test"
+          displayName: "Testing global item creation"
+          items:
+            - kind: "folder"
+              name: "interior-test"
