@@ -5,19 +5,28 @@ removeStrategy:
 items:
   - kind: "folder"
     name: project-test
-    displayName: "global-test"
-    description: "Testing global item creation"
+    displayName: "Project Alpha"
+    description: "Project Alpha is going to change the world!"
     groups:
-      - name: "Developers"
+      - name: "Project Alpha Developers"
         members:
           users:
           - zach
         roles:
           - name: "developer"
-      items:
-        - kind: "folder"
-          name: "project-test"
-          displayName: "Testing global item creation"
-          items:
-            - kind: "folder"
-              name: "interior-test"
+    items: 
+      - kind: "folder"
+        name: "project-alpha-test"
+        displayName: "Project Alpha Test"
+        items:
+          - kind: "folder"
+            name: "test-1"
+          - kind: "folder"
+            name: "test-2"
+  - kind: "folder"
+    name: "project-beta"
+    displayName: "Project Beta"
+    description: "Secret project! Only Admins can see this!"
+    filteredRoles: 
+      - "developer"
+      - "browser"
